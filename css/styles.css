@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 *,
 ::before,
 ::after {
@@ -56,13 +57,13 @@ p {
   background: #fff;
   font-weight: 700;
   cursor: pointer;
-  transition: all 250ms linear;
+  transition: color 250ms linear, background 250ms linear;
 }
 
 .component-submit-btn {
   position: relative;
-  padding: 1rem 6rem;
-  border-radius: 15px;
+  padding: 1rem 5rem;
+  border-radius: 7px;
   background: hsl(245deg, 75%, 52%);
   color: #fff;
   box-shadow: 0 15px 20px #c9c5f7;
@@ -72,7 +73,7 @@ p {
 }
 .component-cancel-btn {
   color: hsl(224deg, 23%, 55%);
-  padding: 1.5rem 6rem;
+  padding: 1.5rem 1rem;
   margin-bottom: 0.7rem;
   font-size: 1rem;
 }
@@ -92,7 +93,7 @@ main {
 }
 
 .component {
-  width: 375px;
+  width: 350px;
   background: #fff;
   border-radius: 25px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
@@ -142,10 +143,53 @@ main {
 .component-plan a {
   text-align: right;
   font-weight: 700;
-  transition: all 250ms linear;
+  transition: color 250ms linear, background 250ms linear;
   cursor: pointer;
 }
 .component-plan a:hover {
   text-decoration: none;
   color: #8b82ed;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+a,
+p {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  color: hsl(224deg, 23%, 55%);
+}
+
+@media (min-width: 1440px) {
+  body {
+    background: url(../images/pattern-background-desktop.svg) top/contain no-repeat fixed;
+    background-color: hsl(225deg, 100%, 94%);
+  }
+  .component {
+    width: 400px;
+  }
+  .component-plan {
+    width: 80%;
+  }
+  .component-info p {
+    width: 75%;
+  }
+  .component-submit-btn {
+    padding: 1rem 6rem;
+  }
 }

@@ -13,8 +13,8 @@
   &-submit-btn {
     @extend %btn;
     position: relative;
-    padding: 1rem 6rem;
-    border-radius: $radius-2;
+    padding: 1rem 5rem;
+    border-radius: $radius-3;
     background: $cl-primary-bBlue;
     color: #fff;
     box-shadow: 0 15px 20px lighten($cl-primary-bBlue, 35);
@@ -25,7 +25,7 @@
   &-cancel-btn {
     @extend %btn;
     color: $cl-deasturatedBlue;
-    padding: 1.5rem 6rem;
+    padding: 1.5rem 1rem;
     margin-bottom: 0.7rem;
     font-size: 1rem;
     &:hover {

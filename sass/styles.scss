@@ -12,7 +12,7 @@ main {
   place-items: center;
 }
 .component {
-  width: $fixed-mobile;
+  width: $fixed-width;
   background: #fff;
   border-radius: $radius-1;
   box-shadow: $box-shadow;
@@ -70,3 +70,4 @@ main {
     }
   }
 }
+@import "desktop";

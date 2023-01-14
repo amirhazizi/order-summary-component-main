@@ -1,0 +1,22 @@
+@import "config";
+@media (min-width: 1440px) {
+  body {
+    background: url(../images/pattern-background-desktop.svg) top/contain
+      no-repeat fixed;
+    background-color: $cl-primary-pBlue;
+  }
+  .component {
+    width: 400px;
+    &-plan {
+      width: 80%;
+    }
+    &-info {
+      p {
+        width: 75%;
+      }
+    }
+    &-submit-btn {
+      padding: 1rem 6rem;
+    }
+  }
+}
