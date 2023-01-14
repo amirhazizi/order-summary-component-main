@@ -1,13 +1,14 @@
 @import "config";
 @import "btn";
+// body
 body {
   background: url(../images/pattern-background-mobile.svg) center/cover
     no-repeat fixed;
   background-color: $cl-primary-pBlue;
-  // background-color: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
 }
+// main
 main {
-  height: 100vh;
+  height: calc(100vh - 1.5rem);
   display: grid;
   place-items: center;
 }
@@ -40,7 +41,7 @@ main {
   }
   &-plan {
     display: grid;
-    grid-template-columns: auto 2fr 1fr;
+    grid-template-columns: auto 2.5fr 1.5fr;
     width: 85%;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -50,7 +51,7 @@ main {
     border-radius: $radius-2;
     &-text {
       text-align: left;
-      margin-left: 1.5rem;
+      margin-left: 1.2rem;
 
       h2 {
         font-size: 1rem;
@@ -70,4 +71,22 @@ main {
     }
   }
 }
+// footer
+.attribution {
+  height: 1.5rem;
+  width: 22rem;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0.2rem 0;
+  border-top-left-radius: $radius-3;
+  border-top-right-radius: $radius-3;
+  font-family: $primary-font;
+  box-shadow: $box-shadow;
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.75rem;
+  }
+}
+// reponsive
 @import "desktop";

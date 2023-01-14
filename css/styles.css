@@ -87,7 +87,7 @@ body {
 }
 
 main {
-  height: 100vh;
+  height: calc(100vh - 1.5rem);
   display: grid;
   place-items: center;
 }
@@ -122,7 +122,7 @@ main {
 }
 .component-plan {
   display: grid;
-  grid-template-columns: auto 2fr 1fr;
+  grid-template-columns: auto 2.5fr 1.5fr;
   width: 85%;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -133,7 +133,7 @@ main {
 }
 .component-plan-text {
   text-align: left;
-  margin-left: 1.5rem;
+  margin-left: 1.2rem;
 }
 .component-plan-text h2 {
   font-size: 1rem;
@@ -149,6 +149,23 @@ main {
 .component-plan a:hover {
   text-decoration: none;
   color: #8b82ed;
+}
+
+.attribution {
+  height: 1.5rem;
+  width: 22rem;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0.2rem 0;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  font-family: "Red Hat Display", sans-serif;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+}
+.attribution a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.75rem;
 }
 
 *,
