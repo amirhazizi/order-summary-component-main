@@ -18,12 +18,12 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Live Site
 
-[Click Here](https://lovely-sherbet-284170.netlify.app/)
+[Click Here](https://zingy-quokka-7bec0b.netlify.app/)
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SASS CSS Pre Processor
 - CSS Grid
 
 ## Author
