@@ -1,0 +1,34 @@
+// variables
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+$primary-font: "Red Hat Display", sans-serif;
+$cl-primary-pBlue: hsl(225, 100%, 94%);
+$cl-primary-bBlue: hsl(245, 75%, 52%);
+$cl-pBlue: hsl(225, 100%, 98%);
+$cl-deasturatedBlue: hsl(224, 23%, 55%);
+$cl-dBlue: hsl(223, 47%, 23%);
+$font-size: 16px;
+$fixed-mobile: 375px;
+$fixed-desktop: 1440px;
+$radius-1: 25px;
+$radius-2: 25px;
+// reset style
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  width: 100%;
+}
+h1,
+h2,
+a,
+p {
+  font-family: $primary-font;
+}
+p {
+  color: $cl-deasturatedBlue;
+}
