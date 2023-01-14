@@ -1,0 +1,35 @@
+@import "config";
+%btn {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  font-family: $primary-font;
+  background: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: $transition;
+}
+.component {
+  &-submit-btn {
+    @extend %btn;
+    position: relative;
+    padding: 1rem 6rem;
+    border-radius: $radius-2;
+    background: $cl-primary-bBlue;
+    color: #fff;
+    box-shadow: 0 15px 20px lighten($cl-primary-bBlue, 35);
+    &:hover {
+      background: lighten($cl-primary-bBlue, 20);
+    }
+  }
+  &-cancel-btn {
+    @extend %btn;
+    color: $cl-deasturatedBlue;
+    padding: 1.5rem 6rem;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    &:hover {
+      color: $cl-dBlue;
+    }
+  }
+}

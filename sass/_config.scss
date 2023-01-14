@@ -10,7 +10,9 @@ $font-size: 16px;
 $fixed-mobile: 375px;
 $fixed-desktop: 1440px;
 $radius-1: 25px;
-$radius-2: 25px;
+$radius-2: 15px;
+$box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+$transition: all 250ms linear;
 // reset style
 *,
 ::before,
